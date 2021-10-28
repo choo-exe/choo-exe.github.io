@@ -1,0 +1,180 @@
+/*Primer selector "Por etiqueta"*/
+body{
+    background-color: black;
+    background-image: url(../img/fondo.png);
+    background-size: 100% ;
+}
+h1{
+    color: rgb(255, 60, 60); 
+    font-weight: lighter;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+h1 span{
+    color: white;
+}
+/*a todos los botones le esta aplicando eso*/
+button{
+    background-color:teal;
+    color: black;
+}
+
+/*Por ID*/
+#btnInicio{
+    width: 300px;
+    height: 60px;
+    background-color:white;
+    margin-left: 40%;
+    color: rgb(255, 60, 60);
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 34px 23px 25px 2px rgba(188,178,178,0.75);
+}
+li{
+    color: white;
+}
+/*Por clase*/
+.activo{
+    text-decoration: underline;
+    transform: uppercase;
+}
+#barril{
+    /*background-color: chartreuse;*/
+    top:86% ;
+    left: 35%;
+    width: 70px;
+    position: absolute;
+    transform: rotate(18deg);
+    animation-name: barrilAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   /* overflow: hidden;*/
+
+}
+#barril img{
+    width: 100%;
+}
+#DK{
+    /*top:29% ;
+    right: 50%;*/
+    top:-200%;
+    right: 35%;
+    width: 90px;
+    position: absolute;
+    animation-name: DKAnim;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    
+
+}
+#DK img{
+    width: 100%;
+}
+#barril2{
+    /*background-color: chartreuse;*/
+    top:86% ;
+    right: 35%;
+    width: 70px;
+    position: absolute;
+    transform: rotate(342deg);
+   /* overflow: hidden;*/
+
+}
+#barril2 img{
+    width: 100%;
+}
+#logo{
+    /*background-color: chartreuse;*/
+    top:1% ;
+    right: 1%;
+    width: 150px;
+    position: absolute;
+    transition: 0.5s ease-in all ;
+   /* overflow: hidden;*/
+
+}
+#logo img{
+    width: 100%;
+}
+#logo:hover{
+    top: 1%;
+    transform: scale(1.5);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
+}
+@keyframes DKAnim{
+    0%{
+        top:1% ;
+        left: 23%;
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    25%{
+        top:28% ;
+        left: 41%;
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        left: 57%;
+        transform: scale(1.3);
+        opacity: 1;;
+    }
+    75%{
+        top:86% ;
+        right: 35%;
+        opacity: 1;
+        transform: rotate(-0deg);
+    }
+    75%{
+        top:86% ;
+        right: 35%;
+        opacity: 1;
+        transform: rotate(340deg);
+    }
+    80%{
+        top:86% ;
+        right: 35%;
+        opacity: 1;
+        transform: rotate(-270deg);
+    }
+    90%{
+        top:80% ;
+        left: 61%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        top:-40% ;
+        left: 61%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    
+    
+}
+
+@keyframes barrilAnim{
+    /*from{
+        transform: rotate(18deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }*/
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(72deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
+
+    
+    
+}
