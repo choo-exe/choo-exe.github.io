@@ -12,8 +12,16 @@
     #about .col, #contacto .col {
         width: 100%;
         }
+
+    #proyectos{
+        padding-bottom: 30px;
+    }
     #proyectos .item {
         width: 100%;
+        height: auto;
+    }
+    #caja1{
+        padding: 25px;
     }
     
    #main video{
@@ -22,5 +30,16 @@
     #main #overlay{
         background-image: url(../img/moras.jpg);
     }
-
+    
+    #titulo {
+        height: 190px;
+        }
+        #derechos {
+            height: 80px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+            float: left;
+        }
 } 
