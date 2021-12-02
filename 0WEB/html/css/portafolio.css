@@ -38,6 +38,9 @@ header nav{
     width: 400px;
     /*background-color: white; solo para poder ver los cambios*/
 }
+header #menuMovil{
+    display:none;
+}
 header nav ul li{
     /*display: inline-block;*/
     float: left;
@@ -117,10 +120,14 @@ section#main{
         text-decoration: none;
         color: white;
     }
-    #main, #about, #proyectos, #contactanos, #titulo, #derechos,#overlay {
+      #about, #contactanos, #proyectos{ /*aquii*/
         width: 100%;
-        height: 700px;
-        padding-right: 5%;
+       min-height: 700px;
+
+    }
+    #main, #titulo,#overlay ,#derechos{
+        width: 100%;
+       height: 700px;
     }
     #about .col, #contacto .col{
         float: left;
@@ -163,7 +170,7 @@ section#main{
         font-family: 'Open Sans', sans-serif;
 
     }
-    section#proyectos{
+    #proyectos{
         height: 100vh;
         overflow: hidden;
         
