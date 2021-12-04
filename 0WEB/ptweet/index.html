@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ptweet</title>
+    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <main>
         <div class="col">
-            nada
         </div>
+        
         <div class="col">
-            <h1>P.Tweet</h1>
-            <h3>Bienenidos</h3>
+            
+                <img src="../ptweet/img/ptweetlogo.png" alt="logito" class="logito2" >
+            <h3>Bienvenidos</h3>
+            
             <div class="formulario">
+                
+                
                 <fieldset>
-                    <label for="">Usuario</label>
-                    <input type="text"> 
-                </fieldset>
-                <fieldset>/u
-                    <label for="">Contraseña</label>
-                    <input type="password">
+                    <label for="">Usuario</label> <br>
+                    <input type="text" id="txtUsuario" onkeyup="limpiar()"> 
                 </fieldset>
                 <fieldset>
-                    <button>Aceptar</button>
+                    <label for="">Contraseña</label> <br>
+                    <input type="password" id="txtPassword"onkeyup="limpiar()">
+                </fieldset>
+                <fieldset>
+                    <button class= "btnAceptar" id="btnAceptar">Aceptar</button>
+                </fieldset>
+                <fieldset>
+                    <span class="error" id="error"></span>
                 </fieldset>
             </div>
         </div>
     </main>
-    <script>
-        var x=0;
-         
-    </script>
 </body>
 </html>

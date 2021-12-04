@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+ main{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+ }
+ main .col{
+     display: flex;
+     flex-direction: column;
+     flex-basis: 100%;
+     flex: 1;
+     height: 100vh;
+ }
+ h3{
+     padding-left: 20px;
+ }
+ main .col:first-child{
+     flex: 2;
+     background-image: url(../img/fondo.png);
+     background-size: 130% 100%;
+     background-position: -10% 0;
+ }
+ 
+.btnAceptar{
+    width: 110px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    background-image: url(../img/peluchemorado.jpg);
+    border-color: yellow;
+    color: yellow;
+}
+fieldset{
+    border:hidden;
+    padding-top: 30px;
+    width: 80%;
+    resize: none;
+    padding-left:20px;
+}
+input{
+    border-color: violet;
+    width: 400px;
+    height: 35px;
+}
+ .logito2          {
+    height:15% ;
+    width: 45%;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+/*col.btnAceptar{
+    background-color: violet;
+  background-image:url(../img/peluchemorado.jpg);
+}*/

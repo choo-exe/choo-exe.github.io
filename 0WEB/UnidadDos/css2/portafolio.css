@@ -1,0 +1,244 @@
+:root{
+    --main-color:#d875d3;
+    --text-color: #101314;
+
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(248, 237, 237);
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Festive', cursive;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color:var(--main-color);
+    display: flex;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    justify-content: space-around;
+    position: fixed;
+    z-index: 4;
+}
+header #logo{
+    margin: 10px;
+    margin-left:10px;
+    width: 200px;
+    /*background-color: white; solo para poder ver los cambios*/
+}
+header nav{
+    margin: 10px;
+    margin-right:10px;
+    width: 400px;
+    /*background-color: white; solo para poder ver los cambios*/
+}
+header #menuMovil{
+    display:none;
+}
+header nav ul li{
+    /*display: inline-block;*/
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-top:5px;
+    padding: 5px;
+    transition: 0.5s ease-in all;
+}
+header nav ul li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+header nav ul li:hover{
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 5px;
+}
+header nav ul li a:hover{
+    color: var(--main-color);
+}
+section#main{
+    background-color:black;
+    height: 100vh;
+    overflow:hidden;
+    
+}
+#main video{
+    min-width: 100%;
+    min-height: 100%;
+}
+#main #overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+   /* background-image: url(../img/patron.png);*/
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 3;
+
+}
+#main #overlay h2{
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+#main #overlay h3{
+    text-align:  center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    }
+    .btn{
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        padding: 8px;
+        font-size:  1rem;
+    }
+    .btn-primary{
+        background-color: #d875d3;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn-primary:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+        top: 1%;
+    }
+    a.btn{
+        text-decoration: none;
+        color: white;
+    }
+      #about, #contactanos, #proyectos{ /*aquii*/
+        width: 100%;
+       min-height: 700px;
+
+    }
+    #main, #titulo,#overlay , #derechos{
+        width: 100%;
+       height: 700px;
+    }
+    #about .col, #contacto .col{
+        float: left;
+        width: 50%;
+        text-align: justify;
+    }
+    #about h2{
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 30px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #about > .col > h2{
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+    }
+   #about .col img{
+        width: 70%;
+        display: block;
+        margin: 20px auto;
+    }
+    #about .col p{
+        margin-top: 50px;
+    }
+    #titulo{
+        height: 110px;
+        background-image:url(../img/moras.jpg);
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        padding-top: 50px;
+
+    }
+    
+    #proyectos h3{
+        text-align: left;
+        font-size: 1rem;
+        padding-top: 30px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    #proyectos{
+        height: auto;
+        overflow: hidden;
+        
+    }
+    #proyectos img{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /*ascoooooo*/
+
+#caja1 .item{
+    width: 23%;
+    background-color: pink;
+    height:350px;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+.btn-proyecto{
+    background-color: cornflowerblue;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1%;
+    
+}
+fieldset,textarea {
+    border:hidden;
+    padding-top: 30px;
+    width: 80%;
+    resize: none;
+}
+input{
+    border: hidden;
+    width: 80%;
+    height: 30px;
+}
+.btn-enviar{
+    background-color:cornflowerblue;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+fieldset h3{
+    text-align: left;
+    font-size: 2rem;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#caja1 .item .imagen{
+    width: 23%;
+    height:70x;
+    border-radius: 20px;
+
+}
+#caja1 .item .try3{
+    text-align: center;
+    
+    }
+#derechos{
+    height: 80px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    float: left;
+}
