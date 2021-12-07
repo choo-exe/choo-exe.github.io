@@ -2,13 +2,13 @@
     margin:0px;
     padding: 0px;
 }
- main{
+ #login{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      width: 100%;
  }
- main .col{
+ #login .col{
      display: flex;
      flex-direction: column;
      flex-basis: 100%;
@@ -18,7 +18,7 @@
  h3{
      padding-left: 20px;
  }
- main .col:first-child{
+ #login .col:first-child{
      flex: 2;
      background-image: url(../img/fondo.png);
      background-size: 130% 100%;
