@@ -137,6 +137,7 @@ main{
     height: 50px;
     border-radius:50%;
     border:2px solid var(--p-amarillo);
+    float:left;
 }
 #newPost, .post{
    
